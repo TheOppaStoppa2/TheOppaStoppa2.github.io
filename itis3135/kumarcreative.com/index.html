@@ -1,46 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kumar Creative — Super Kangaroo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kumar Studios — Design & Development</title>
+  <!--https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55-->
+
   <style>
-   body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #bdd5ea;
-      color: #495867;
-      max-width: 900px;
-      width: 90%;
-      margin: 0 auto;
-      line-height: 1.6;
+    
+    :root{
+  --bg: #bdd5ea;       
+  --accent: #fe5f55;   
+  --dark: #495867;     
+  --muted: #577399;    
+  --accent-2: #f7f7ff; 
+}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: var(--dark);
+      line-height:1.5;
     }
-    header {
-      background-color: #ffcc33;
-      padding: 2rem;
+    header{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:1.25rem;
+      background: white;
+      border-bottom: 1px solid #e6e6e6;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header img {
+      width:84px;  
+      height:84px; 
+      object-fit: contain;
     }
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-      font-size: 1.2rem;
+    header h1{
+      margin:0;
+      font-size:1.5rem;
+      letter-spacing:0.02em;
+    }
+    .tagline { color: var(--muted); font-size:0.95rem; margin-top:0.25rem; }
+
+    main{
+      max-width:900px;
+      margin:2rem auto;
+      padding:0 1rem;
+    }
+    h2{ margin-top:0; color:var(--dark); }
+
+    /* custom bullets (non-standard) */
+    ul.firm-features {
+      list-style:none;
+      padding-left:0;
+    }
+    ul.firm-features li{
+      position:relative;
+      padding-left:2.2rem;
+      margin:0.6rem 0;
+    }
+    ul.firm-features li::before{
+      content: "★";               /* change symbol or use SVG via background-image */
+      position:absolute;
+      left:0;
+      top:0;
+      font-size:1.1rem;
+      color: var(--accent);
+      line-height:1;
+    }
+
+    /* contact block */
+    address.contact {
+      margin-top:1.5rem;
+      font-style:normal;
+      border-left:4px solid var(--accent-2);
+      padding:0.75rem 1rem;
+      background: rgba(234, 220, 170, 0.2);
+      max-width: 420px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:focus, a:hover { text-decoration: underline; outline:2px dashed var(--accent); }
+
+    footer{
+      margin-top:3rem;
+      border-top:1px solid #eee;
+      padding:1rem;
+      text-align:center;
+      font-size:0.9rem;
+      color:var(--muted);
+      background: white;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Super Kangaroo</h1>
-    <h2>Kumar Creative Design Firm</h2>
+    <img src="../images/kangaroo.jpg" alt="Kumar Studios logo — stylized KS" width="84" height="84">
+    <div>
+      <h1>Kumar Studios</h1>
+      <div class="tagline">Design • Web • UX — Small studio, big ideas</div>
+    </div>
   </header>
 
   <main>
-    <p>Welcome to Super Kangaroo, a bold and energetic company specializing in high-performance backpacks and gear. Our mission is simple: help you leap ahead with style and strength.</p>
+    <h2>Kumar Studios — Services</h2>
+
+    <p>Kumar Studios is a boutique web design & development consultancy focused on approachable, usable, and delightful websites for small businesses and creative projects. We blend clean visuals with practical code to get your ideas online quickly.</p>
+
+    <ul class="firm-features">
+      <li>Custom responsive websites that load fast</li>
+      <li>Accessible design with WCAG considerations</li>
+      <li>Branding and logo design packages</li>
+      <li>Performance optimization & SEO basics</li>
+      <li>Maintenance and support retainer options</li>
+    </ul>
+
+    <p>For new clients we typically start with a 30-minute consultation, an audit of existing assets, and a proposed timeline and estimate. We like to keep projects simple, iterative, and transparent.</p>
+
+    <address class="contact">
+      <strong>Contact Kumar Studios</strong><br>
+      Email: <a href="mailto:hello@kumarstudios.co">hello@kumarstudios.co</a><br>
+      Phone: <a href="tel:+12025551234">(202) 555-1234</a><br>
+      Address: 123 Example Lane, Charlotte, NC 28202
+    </address>
   </main>
 
   <footer>
-    <p>&copy; 2025 Kumar Creative — Super Kangaroo</p>
+    <div>Kumar Studios — small studio, big ideas &mdash; &copy; 2025 Kumar Studios</div>
+    <div><a href="https://validator.w3.org/">HTML validation</a> • <a href="https://jigsaw.w3.org/css-validator/">CSS validation</a></div>
   </footer>
 </body>
 </html>
