@@ -9,12 +9,12 @@ body {
     }
     h1{
       font-family: 'Poppins', sans-serif;
-      color: #fe5f55;
+      color: #6D1A36;
       text-align: center;
     }
     h2 {
       font-family: 'Poppins', sans-serif;
-      color: #fe5f55;
+      color: #6D1A36;
       text-align: center;
       margin-top: 20px;
     }
@@ -41,6 +41,6 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%; /* makes it a circle */
+        border-radius: 50%;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
