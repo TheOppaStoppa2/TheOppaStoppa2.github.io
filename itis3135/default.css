@@ -1,7 +1,7 @@
 body {
       font-family: 'Roboto', sans-serif;
       background-color: #FCEADE;
-      color: #FCEADE;
+      color: #EA526F;
       max-width: 900px;
       width: 90%;
       margin: 0 auto;
@@ -9,12 +9,12 @@ body {
     }
     h1{
       font-family: 'Poppins', sans-serif;
-      color: #FF8A5B;
+      color: #EA526F;
       text-align: center;
     }
     h2 {
       font-family: 'Poppins', sans-serif;
-      color: #FF8A5B;
+      color: #EA526F;
       text-align: center;
       margin-top: 20px;
     }
@@ -44,3 +44,22 @@ body {
         border-radius: 50%;
         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
+nav {
+    background-color: #EA526F;
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FCEADE; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #25CED1;          
+}
