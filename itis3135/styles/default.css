@@ -1,3 +1,8 @@
+main {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+    }
 body {
       font-family: 'Roboto', sans-serif;
       background-color: #FCEADE;
@@ -62,4 +67,24 @@ nav a {
 
 nav a:hover {
     color: #25CED1;          
+}
+/* Laptops / Small Desktops */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+  #colorbox {
+    background-color: yellow;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  #colorbox {
+    background-color: orange;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  #colorbox {
+    background-color: red;
+  }
 }
