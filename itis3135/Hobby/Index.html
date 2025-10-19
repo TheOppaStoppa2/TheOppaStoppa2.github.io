@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <title>Basketball Passion</title>
 
   <!-- Embedded Stylesheet -->
@@ -50,7 +51,7 @@
       margin: auto;
     }
 
-    main section.active {
+    .active {
       display: block;
     }
 
@@ -247,7 +248,7 @@
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll('main section');
-      sections.forEach(s => s.classList.remove('active'));
+      sections.forEach((s) => s.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
   </script>
