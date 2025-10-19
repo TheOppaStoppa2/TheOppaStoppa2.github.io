@@ -3,10 +3,253 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sankalp Kumar’s Super Kangaroo</title>
- <link rel="stylesheet" href="styles/default.css">
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <title>Basketball Passion</title>
+
+  <!-- Embedded Stylesheet -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3f3e6;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ff6b35;
+      color: white;
+      padding: 1.2em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.3em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe66d;
+    }
+
+    main section {
+      display: none;
+      padding: 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    main section.active {
+      display: block;
+    }
+
+    figure {
+      margin: 20px auto;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 8px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 1em 0;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffe66d;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #ff6b35;
+      margin: 20px auto;
+      width: 60%;
+    }
+
+    .divider::after {
+      content: "🏀";
+      margin: 0 6px;
+    }
+
+    table {
+      margin: 1em auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 8px 12px;
+    }
+
+    th {
+      background-color: #ffe66d;
+    }
+
+    button {
+      background-color: #ff6b35;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #e85a28;
+    }
+  </style>
 </head>
+
 <body>
-  <div data-include="components/header.html"></div>
+  <header>
+    <h1>Basketball Passion</h1>
+    <nav>
+      <a href="#" onclick="showSection('what')">What</a>🏀
+      <a href="#" onclick="showSection('who')">Who</a>🏀
+      <a href="#" onclick="showSection('when')">When</a>🏀
+      <a href="#" onclick="showSection('where')">Where</a>🏀
+      <a href="#" onclick="showSection('how')">How</a>🏀
+      <a href="#" onclick="showSection('why')">Why</a>🏀
+      <a href="#" onclick="showSection('ai')">AI Prompts</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- WHAT -->
+    <section id="what" class="active">
+      <h2>What is Basketball?</h2>
+      <p>Basketball is a fast-paced team sport played on a rectangular court where two teams try to score points by shooting a ball through a hoop. It's about skill, teamwork, and strategy.</p>
+      <figure>
+        <img src="images/Outdoor-Basketball-Court.jpg" alt="Basketball court" width="600">
+        <figcaption>A basketball court. This is where this game is played.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Photorealistic image of an outdoor basketball court at sunset with hoop and ball on the court."</em></p>
+      <table>
+        <tr><th>Basic Rules</th><th>Description</th></tr>
+        <tr><td>Scoring</td><td>2 points inside the arc, 3 outside.</td></tr>
+        <tr><td>Team Size</td><td>5 players on the court per team.</td></tr>
+        <tr><td>Game Length</td><td>4 quarters of 12 minutes (NBA).</td></tr>
+      </table>
+    </section>
+
+    <!-- WHO -->
+    <section id="who">
+      <h2>Who Plays Basketball?</h2>
+      <p>Basketball is for everyone — from children playing at the park to professional athletes in the NBA and WNBA. It’s a sport that builds community and character.</p>
+      <figure>
+        <img src="images/player-dunk.jpg" alt="Basketball player dunking" width="600">
+        <figcaption>Players of all backgrounds contribute to the global basketball community.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Photorealistic image of a basketball player mid-air dunk in an indoor arena."</em></p>
+      <p>I personally started playing basketball when I was 10, inspired by players like Kobe Bryant and Stephen Curry. Since then, it's been my way to stay active and focused.</p>
+    </section>
+
+    <!-- WHEN -->
+    <section id="when">
+      <h2>When to Play Basketball</h2>
+      <p>Basketball can be played year-round, indoors or outdoors. However, certain seasons bring unique experiences.</p>
+      <table>
+        <tr><th>Season</th><th>Reason</th></tr>
+        <tr><td>Spring</td><td>Perfect for outdoor pickup games.</td></tr>
+        <tr><td>Winter</td><td>Indoor league seasons are in full swing.</td></tr>
+        <tr><td>Summer</td><td>Streetball and tournaments peak.</td></tr>
+      </table>
+      <figure>
+        <img src="images/streetball.jpg" alt="Street basketball game" width="600">
+        <figcaption>Summer streetball brings people together in open courts and tournaments.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Photorealistic image of a summer street basketball game under bright sunlight."</em></p>
+    </section>
+
+    <!-- WHERE -->
+    <section id="where">
+      <h2>Where to Play Basketball</h2>
+      <p>You can play basketball anywhere — from driveways and school gyms to pro arenas and community centers. Here are some favorite spots:</p>
+      <ul style="text-align:left; max-width:700px; margin:auto;">
+        <li>Local parks with outdoor courts</li>
+        <li>YMCA and recreation centers</li>
+        <li>College and university gyms</li>
+      </ul>
+      <figure>
+        <img src="images/training-drills.png" alt="Indoor basketball practice" width="600">
+        <figcaption>Training facilities offer great environments to hone your skills.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Indoor basketball training gym with players practicing dribbling and shooting drills."</em></p>
+    </section>
+
+    <!-- HOW -->
+    <section id="how">
+      <h2>How to Get Started with Basketball</h2>
+      <p>Getting started is simple — all you need is a basketball and a hoop. But improving takes discipline, training, and teamwork.</p>
+      <ol style="text-align:left; max-width:700px; margin:auto;">
+        <li>Practice dribbling and shooting daily.</li>
+        <li>Watch professional games for strategies.</li>
+        <li>Play with others to learn teamwork.</li>
+      </ol>
+      <figure>
+        <img src="images/teamwork.jpg" alt="Team huddle" width="600">
+        <figcaption>Team huddles remind us that basketball is about unity and trust.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Basketball team huddled together before a game, showing camaraderie."</em></p>
+    </section>
+
+    <!-- WHY -->
+    <section id="why">
+      <h2>Why I Love Basketball</h2>
+      <p>Basketball isn’t just a sport — it’s a lifestyle. It teaches perseverance, builds friendships, and offers an outlet for stress and creativity.</p>
+      <p>It’s a universal language that connects people from every background. When I play, everything else disappears — it’s pure focus and joy.</p>
+      <figure>
+        <img src="images/logo.png" alt="Basketball logo" width="300">
+        <figcaption>The symbol of passion, determination, and endless practice.</figcaption>
+      </figure>
+      <p><em>AI Prompt:</em> <em>"Minimalist logo design featuring an orange basketball with motion lines and energy flare."</em></p>
+    </section>
+
+    <section id="ai">
+      <h2>AI Prompts Used</h2>
+      <p>Model used: <strong>ChatGPT GPT-5</strong> and <strong>Gemini</strong> for image generation.</p>
+      <ul style="text-align:left; max-width:700px; margin:auto;">
+        <li>"Minimalist logo design featuring an orange basketball with motion lines and energy flare."</li>
+        <li>"Help me make a coherent paragraph about why I love basketball based on these things: "It teaches teamwork and "</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
+</html>
