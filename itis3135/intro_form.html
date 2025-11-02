@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction Form</title>
+  <link rel="stylesheet" href="styles/default.css">
+   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+
+  <main>
+    <h2>Introduction Form</h2>
+    <h3>Please submit the form below.</h3>
+
+    <form id="introForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>First Name:<input type="text" name="firstName" required value="Sankalp"></label><br>
+        <label>Middle Name/Initial:<input type="text" name="middleName" placeholder="Optional"></label><br>
+        <label>Nickname/Preferred Name:<input type="text" name="nickname" placeholder="Optional"></label><br>
+        <label>Last Name:<input type="text" name="lastName" required value="Kumar"></label><br>
+        <label>Acknowledgment Statement:<input type="text" name="ackStatement" required value="My super kangaroo intro"></label><br>
+        <label>Acknowledgment Date:<input type="date" name="ackDate" required></label><br>
+        <label>Mascot Adjective:<input type="text" name="mascotAdj" required value="Super"></label><br>
+        <label>Mascot Animal:<input type="text" name="mascotAnimal" required value="Kangaroo"></label><br>
+        <label>Divider:<input type="text" name="divider" required value="~"></label><br>
+        <label>Picture:<input type="file" name="picture" accept="image/*"></label><br>
+        <label>Picture Caption:<input type="text" name="pictureCaption" required value="Photo of Sankalp Kumar"></label><br>
+        <label>Personal Statement:<textarea name="personalStatement" required>Hi, my name is Sankalp Kumar. I am a computer science major and I plan to graduate Spring 2027 (fingers crossed I did not mess up something). I enjoy playing basketball and scrolling on reels. My concentration is in data science. I love numbers and being able to combine it with my passion for computers, it's like peanut butter and jelly for me. I don’t know what else you guys need to know about me.</textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>7 Main Backgrounds</legend>
+        <label>Personal Background:<textarea name="personalBg" required>I was born in Pune, India in 2006 and spent 6 years moving around India in all different places. Then when I was 6–7 years old, my family and I moved here. I lived in different cities in New Jersey for 10 years. I love it in New Jersey. I enjoy the beach and I love sunsets. Something really meaningful about the day ending and knowing it will happen again.</textarea></label><br>
+        <label>Professional Background:<textarea name="professionalBg" required>I had an internship over the summer at a non-profit organization designing their website using WordPress.</textarea></label><br>
+        <label>Academic Background:<textarea name="academicBg" required>I am a computer science major with a minor in Mathematics, and my concentration is Data Science. I should graduate in Spring 2027 (again, fingers crossed).</textarea></label><br>
+        <label>Background in this Course:<textarea name="courseBg" required>I am taking this course because I believe that in this day and age it is super important to be able to put yourself out there on the internet, and having and being able to create a website is a super useful way to do that.</textarea></label><br>
+        <label>Primary Computer Platform:<textarea name="platform" required>Windows is my primary computer platform.</textarea></label><br>
+        <label>Funny/Interesting Story:<textarea name="funnyStory" placeholder="Optional">I peed on a squirrel by accident this one time.</textarea></label><br>
+        <label>Something Else to Share:<textarea name="shareSomething" placeholder="Optional">“Climb a mountain. Fight a mountain lion. Win.” – Sankalp Kumar</textarea></label>
+      </fieldset>
+
+      <fieldset id="coursesFieldset">
+        <legend>Courses</legend>
+        <div class="courseRow">
+          <input type="text" name="courseDept[]" required placeholder="Department" value="ITIS">
+          <input type="text" name="courseNumber[]" required placeholder="Number" value="3135">
+          <input type="text" name="courseName[]" required placeholder="Course Name" value="Web-Based Application Design">
+          <input type="text" name="courseReason[]" required placeholder="Reason" value="Required for major">
+          <button type="button" class="deleteCourse">Delete</button>
+        </div>
+      </fieldset>
+      <button type="button" id="addCourse">Add Course</button><br><br>
+
+      <fieldset>
+        <legend>Quote</legend>
+        <label>Quote:<input type="text" name="quote" required value="Climb a mountain. Fight a mountain lion. Win."></label><br>
+        <label>Quote Author:<input type="text" name="quoteAuthor" required value="Sankalp Kumar"></label>
+      </fieldset>
+
+     <fieldset>
+  <legend>Links</legend>
+  <label>Link 1 URL:<input type="url" name="link1" placeholder="URL" value="https://www.freecodecamp.org/learn/full-stack-developer/"></label>
+  <label>Link 1 Text:<input type="text" name="linkText1" placeholder="Display text" value="Free Code Camp"></label><br>
+
+  <label>Link 2 URL:<input type="url" name="link2" placeholder="URL" value=""></label>
+  <label>Link 2 Text:<input type="text" name="linkText2" placeholder="Display text" value=""></label><br>
+
+  <label>Link 3 URL:<input type="url" name="link3" placeholder="URL" value=""></label>
+  <label>Link 3 Text:<input type="text" name="linkText3" placeholder="Display text" value=""></label><br>
+
+  <label>Link 4 URL:<input type="url" name="link4" placeholder="URL" value=""></label>
+  <label>Link 4 Text:<input type="text" name="linkText4" placeholder="Display text" value=""></label><br>
+
+  <label>Link 5 URL:<input type="url" name="link5" placeholder="URL" value=""></label>
+  <label>Link 5 Text:<input type="text" name="linkText5" placeholder="Display text" value=""></label><br>
+</fieldset>
+
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
+
+    <div id="introResult"></div>
+  </main>
+
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/introduction.js"></script>
+</body>
+</html>
