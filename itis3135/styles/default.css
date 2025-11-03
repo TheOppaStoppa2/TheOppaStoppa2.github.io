@@ -88,3 +88,17 @@ nav a:hover {
     background-color: red;
   }
 }
+#introResult pre {
+    background-color: #1e1e1e;  /* Dark background for contrast */
+    color: #d4d4d4;             /* Light text color */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;            /* Adds horizontal scrollbar if needed */
+    white-space: pre-wrap;       /* Wrap long lines */
+    word-wrap: break-word;       /* Ensure text wraps */
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100%;             /* Fit within screen width */
+    box-sizing: border-box;
+     overflow-x: auto;
+    white-space: pre;
+}

@@ -6,6 +6,10 @@
   <title>Introduction Form</title>
   <link rel="stylesheet" href="styles/default.css">
    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
 </head>
 <body>
   <div data-include="components/header.html"></div>
@@ -80,14 +84,19 @@
 
 
       <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-      <button type="button" id="clearBtn">Clear</button>
+<button type="reset">Reset</button>
+<button type="button" id="clearBtn">Clear</button>
+<button type="button" id="htmlBtn">Generate HTML</button>
+<button type="button" id="jsonBtn">Generate JSON</button>
+
     </form>
 
     <div id="introResult"></div>
   </main>
 
-  <div data-include="components/footer.html"></div>
+   <div data-include="components/footer.html"></div>
   <script src="scripts/introduction.js"></script>
+  <script src="scripts/generate_html.js"></script>
+  <script src="scripts/generate_json.js"></script>
 </body>
 </html>
