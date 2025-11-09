@@ -1,0 +1,104 @@
+main {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+    }
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #FCEADE;
+      color: #EA526F;
+      max-width: 900px;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    h1{
+      font-family: 'Poppins', sans-serif;
+      color: #EA526F;
+      text-align: center;
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      color: #EA526F;
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 10px 0;
+      border-top: 2px solid #FCEADE;
+      text-align: center;
+      font-size: 0.9em;
+      background-color: #25CED1;
+      color: #FCEADE;
+    }
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #FCEADE;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+nav {
+    background-color: #EA526F;
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FCEADE; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #25CED1;          
+}
+/* Laptops / Small Desktops */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+  #colorbox {
+    background-color: yellow;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  #colorbox {
+    background-color: orange;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  #colorbox {
+    background-color: red;
+  }
+}
+#introResult pre {
+    background-color: #1e1e1e;  /* Dark background for contrast */
+    color: #d4d4d4;             /* Light text color */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;            /* Adds horizontal scrollbar if needed */
+    white-space: pre-wrap;       /* Wrap long lines */
+    word-wrap: break-word;       /* Ensure text wraps */
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100%;             /* Fit within screen width */
+    box-sizing: border-box;
+     overflow-x: auto;
+    white-space: pre;
+}
