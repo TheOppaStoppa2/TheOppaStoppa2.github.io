@@ -1,104 +1,137 @@
-main {
-  max-width: 900px;
-  width: 90%;
-  margin: 0 auto;
-    }
-body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #FCEADE;
-      color: #EA526F;
-      max-width: 900px;
-      width: 90%;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    h1{
-      font-family: 'Poppins', sans-serif;
-      color: #EA526F;
-      text-align: center;
-    }
-    h2 {
-      font-family: 'Poppins', sans-serif;
-      color: #EA526F;
-      text-align: center;
-      margin-top: 20px;
-    }
-    footer {
-      margin-top: 30px;
-      padding: 10px 0;
-      border-top: 2px solid #FCEADE;
-      text-align: center;
-      font-size: 0.9em;
-      background-color: #25CED1;
-      color: #FCEADE;
-    }
-    footer a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #FCEADE;
-      font-weight: bold;
-      font-family: 'Poppins', sans-serif;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .center-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
+* {
+    box-sizing: border-box;
+}
 
-nav {
-    background-color: #EA526F;
-    padding: 12px 0;
+/* Main content container */
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E1E7E4; /* Soft cream background */
+    color: #1F2A28; /* Dark text for readability */
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Header layout with horizontal line */
+header {
+    border-bottom: 3px solid #4A645E; /* Horizontal separation line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-nav a {
-    color: #FCEADE; 
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #4A645E; /* Primary sage color */
+    margin: 5px 0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #4A645E; /* Primary sage color */
+    margin: 5px 0;
+}
+
+/* Navigation bar */
+#dynamic-header nav {
+    background-color: #A7C4BC; /* Lighter sage nav background */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation list layout */
+#dynamic-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 5px 15px;
+    flex-wrap: wrap;
+}
+
+/* Nav links */
+#dynamic-header nav a {
+    color: #E1E7E4; /* Soft cream text */
     text-decoration: none;
-    margin: 0 15px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #25CED1;          
+#dynamic-header nav a:hover {
+    color: #F4B860; /* Warm gold highlight */
 }
-/* Laptops / Small Desktops */
+
+/* Centered circular image */
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 2px solid #4A645E;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #A7C4BC; /* Light sage footer */
+    color: #1F2A28; /* Dark text */
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1F2A28; /* Dark links */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a:hover {
+    color: #F4B860; /* Warm gold highlight */
+    text-decoration: underline;
+}
+
+/* Media queries for color box examples */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-  #colorbox {
-    background-color: yellow;
-  }
+    #colorbox {
+        background-color: #D0E0D8; /* Slightly darker sage for boxes */
+    }
 }
 
-/* Tablets */
 @media screen and (min-width: 601px) and (max-width: 980px) {
-  #colorbox {
-    background-color: orange;
-  }
+    #colorbox {
+        background-color: #C0D3C9;
+    }
 }
 
-/* Mobile Devices */
 @media screen and (max-width: 600px) {
-  #colorbox {
-    background-color: red;
-  }
+    #colorbox {
+        background-color: #B0C6BB;
+    }
 }
+
+/* Code display block */
 #introResult pre {
-    background-color: #1e1e1e;  /* Dark background for contrast */
-    color: #d4d4d4;             /* Light text color */
+    background-color: #1e1e1e;
+    color: #d4d4d4;
     padding: 15px;
     border-radius: 8px;
-    overflow-x: auto;            /* Adds horizontal scrollbar if needed */
-    white-space: pre-wrap;       /* Wrap long lines */
-    word-wrap: break-word;       /* Ensure text wraps */
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 100%;             /* Fit within screen width */
-    box-sizing: border-box;
-     overflow-x: auto;
+    overflow-x: auto;
     white-space: pre;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100%;
 }
